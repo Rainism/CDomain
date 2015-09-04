@@ -78,12 +78,14 @@ class CDomain:
                         except Exception,e:
                             domain.append(regx[i])
 
-                #print domain
-                    print '''ip:{ip}
+                    domain.remove('ip.chinaz.com')
+                    domains =  list(set(domain))
+                    if domains:
+                        print '''ip:{ip}
 -------------------------------------------
 {domain}
 -------------------------------------------
-'''.format(ip=ip, domain=domain)
+'''.format(ip=ip, domain=domains)
             except Exception,e:
                 pass
 
