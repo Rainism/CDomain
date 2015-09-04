@@ -3,6 +3,8 @@
 ### A Simple CDomain Scan
 #### Use Bing :)
 
+#### Need Python2.x && Requests 
+
     Usage: c.py [options] 202.202.43.1-254
 
     Options:
